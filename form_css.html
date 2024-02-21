@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: lightslategrey;
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        form{
+            width: 20%;
+            font-family: "Oswald", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 0 auto;
+        }
+        button {
+            color: white;
+                width: 80px;
+                border: none;
+                text-align: center;
+                display: inline-block;
+                cursor: pointer;
+                padding: 4px;
+                margin: 3px 1px;
+        }
+        button[type="submit"] {
+                background: green;
+        }
+        button[type="reset"] {
+                background: red;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        .T {
+            width: 95%;
+            padding: 3px;
+        }
+        label {
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <form action="/form_css.html">
+        <h1>Registration Form</h1>
+        <label for="firstname">First Name:</label> <br><input type="Text" class="T" name="firstname"/><br>
+        <label for="lastname">Last Name:</label> <br><input type="Text" class="T" name="lastname"/><br>
+        <label for="nickname">Nick Name:</label> <br><input type="Text" class="T" name="nickname"/><br>
+        <label for="email">Email:</label> <br><input type="Email" class="T" name="email"/><br>
+        <label for="password">Password:</label> <br><input type="Password" class="T" name="password"/><br>
+        <label for="dateofbirth">Date of Birth:</label> <br><input type="Date" class="T" name="dateofbirth"/><br>
+        <label for="Gender">Gender:</label> <br>
+        <input type="Radio" name="male"/> <label for="male">Male</label>
+        <input type="Radio" name="female"/> <label for="female">Female</label>
+        <input type="Radio" name="other"/> <label for="other">Other</label>
+    <br>
+    <label for="mobile">Mobile:</label><br><input type="Tel" id="mobile" name="mobile" pattern="[0-9]{11}" class="T"/><br>
+    <label for="address">Address:</label> <br><textarea name="address" cols="30" rows="10" class="T"></textarea><br>
+    <button type="submit">Submit</button> <button type="Reset">Reset</button> <br>
+    </form>
+</body>
+</html>
