@@ -15,7 +15,7 @@
             margin: 20px;
         }
         form{
-            width: 20%;
+            width: 16%;
             font-family: "Oswald", sans-serif;
                 font-optical-sizing: auto;
                 font-weight: 500;
@@ -43,7 +43,7 @@
         }
         h1{
             text-align: center;
-            font-size: 40px;
+            font-size: 32px;
         }
         .T {
             width: 95%;
@@ -64,12 +64,12 @@
         <label for="password">Password:</label> <br><input type="Password" class="T" name="password"/><br>
         <label for="dateofbirth">Date of Birth:</label> <br><input type="Date" class="T" name="dateofbirth"/><br>
         <label for="Gender">Gender:</label> <br>
-        <input type="Radio" name="male"/> <label for="male">Male</label>
-        <input type="Radio" name="female"/> <label for="female">Female</label>
-        <input type="Radio" name="other"/> <label for="other">Other</label>
+        <input type="Radio" name="Gender" value="male"/> <label for="male">Male</label>
+        <input type="Radio" name="Gender" value="female"/> <label for="female">Female</label>
+        <input type="Radio" name="Gender" value="other"/> <label for="other">Other</label>
     <br>
     <label for="mobile">Mobile:</label><br><input type="Tel" id="mobile" name="mobile" pattern="[0-9]{11}" class="T"/><br>
-    <label for="address">Address:</label> <br><textarea name="address" cols="30" rows="10" class="T"></textarea><br>
+    <label for="address">Address:</label> <br><textarea name="address" cols="30" rows="6" class="T"></textarea><br>
     <button type="submit">Submit</button> <button type="Reset">Reset</button> <br>
     </form>
 </body>
